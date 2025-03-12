@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(135deg,#153677, #4e085f);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    background: #319485;
+    width: 90%;
+    max-width: 30rem;
+    padding: 1rem;
+    box-shadow: rgba(0,0,0,0.35) 0px, 5px, 15px;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #234E70;
+    margin-bottom: 1.5rem;
+}
+
+.todo--input--btn--box{
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+#todo--input::placeholder{
+    font-size: 1.1rem;
+    color: #234E70;
+}
+
+#todo--input{
+    width: 70%; 
+    padding: 1rem;
+    outline: none;
+    border: 2px solid #234E70;
+    font-size: 1.2rem;
+    color: #234E70;
+}
+
+.todo--add--btn{
+    width: 30%;
+    background: #234E70;
+    color: #fbf88e;
+    font-size: 1.5rem;
+
+}
+
+.todo--list--lis{
+    background: #234E70;
+    color: #fbf88e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px, 1px, 2px, 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-bottom: 0.5rem;
+}
+
+li div:last-child{
+    display: flex;
+    gap: 1rem;
+}
+
+.done, .remove{
+    background: transparent;
+    color: #fbf88e;
+    font-size: 1rem;
+    border: 2px solid #fbf88e;
+    padding: 0.2rem 0.4rem;
+}
+
+.done:hover, .remove:hover{
+    background: #fbf88e;
+    color: #234E70;
+}
